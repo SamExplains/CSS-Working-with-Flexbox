@@ -11,6 +11,16 @@
 |
 */
 
+use Illuminate\Support\Facades\Route;
+
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/simple', function () {
+    return view('simple-menu');
+});
+
+Route::get('/advanced', function () {
+  return view('advanced-flex');
 });

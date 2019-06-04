@@ -6,3 +6,333 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+body,
+button,
+input,
+textarea {
+  color: black;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+.menu-section{
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #dcdde1;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #353b48;
+  padding: .6rem 1rem;
+  display: block;
+  transition: all .5s ease;
+}
+
+.menu li a:hover {
+  background-color: white;
+}
+
+.menu-heading {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+
+@media screen and (min-width: 600px) {
+  .single-nav ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .single-nav ul li {
+    flex-grow: 1;flex-basis: auto; /* item width depends on content */
+    flex-shrink: 0; /* wont shrink with no available space */
+  }
+
+}
+
+@media screen and (min-width: 600px) {
+
+  .advanced-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advanced-nav ul li {
+    flex-grow: 1;
+    flex-basis: 2.2rem;
+    flex-shrink: 0;
+  }
+
+  .advanced-nav ul li a {
+    display: flex;
+  }
+
+  .advanced-nav ul li a .icon {
+    flex-basis: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .advanced-nav ul li a .text {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .advanced-nav ul li a .text span {
+    display: block;
+    font-size: .7rem;
+    font-weight: lighter;
+    font-style: italic;
+  }
+
+
+}
+
+header, footer {
+  background-color: black;
+  height: 100px;
+}
+
+.sidebar-right {
+  background-color: blue;
+  color: white;
+}
+
+@media screen and (min-width: 1120px) {
+  .content-area {
+    display: flex;
+  }
+
+  .sidebar-right {
+    flex: 0 0 320px;
+  }
+
+}
+
+.site-header {
+  height: 400px;
+  display: flex;
+  flex-flow: column;
+}
+
+.site-info {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 2em;
+  font-weight: 300;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
+
+.site-description {
+  text-align: center;
+  color: #f6d200;
+  font-size: 1.2em;
+  margin-top: -.8;
+  font-style: italic;
+}
+
+.main-menu{
+  padding: 1em 1em;
+  color: black;
+  background-color: #f6d200;
+}
+
+@media screen and (min-width: 1120px) {
+  .site-title {
+    font-size: 4em;
+  }
+}
+
+.main-content-area {
+  padding: 2em;
+}
+
+.post {
+  background-color: white;
+  margin-bottom: 1em;
+}
+
+.post a {
+  color: black;
+  text-decoration: none;
+}
+
+.post-content {
+  padding: 0 40px 20px;
+}
+
+.post-content h2 {
+  color: black;
+  background-color: #f6d200;
+  padding: 20px;
+  text-align: center;
+  margin: 30px -40px 30px;
+}
+
+@media screen and (min-width: 810px) {
+  .posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .post {
+    flex-basis: 49%;
+  }
+
+}
+
+@media screen and (min-width: 1120px) {
+  .post-one-third {
+    flex-basis: 32%;
+  }
+
+  .post-half {
+    flex-basis: 49%;
+  }
+
+  .post-full {
+    flex-basis: 100%;
+  }
+
+}
+
+.section-header {
+  color: black;
+  font-size: 3em;
+  text-align: center;
+}
+
+.watch-card {
+  margin: 1em;
+}
+
+.watch-img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.watch-content {
+  background-color: black;
+  color: white;
+  padding: 3em;
+}
+
+.watch-content h2 {
+  font-size: 2em;
+  font-weight: 300;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.movie-info {
+  font-weight: bold;
+}
+
+.movie-info span {
+  padding-right: 1.5em;
+}
+
+.movie-story {
+  margin: 1em 0;
+}
+
+.watch-content a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 810px) {
+  .watch-card {
+    display: flex;
+  }
+
+  .watch-content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+
+  .img-right {
+    order: 2;
+  }
+
+}
+
+.download-card {
+  margin-bottom: 1em;
+}
+
+.download-content {
+  background-color: white;
+}
+
+.download-content a {
+  background-color: black;
+  color: white;
+  padding: 1em 2em;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.download-content a i {
+  font-size: 2.5em;
+}
+
+.download-info {
+  padding: 1em 2em;
+}
+
+.download-info h4 {
+  margin: 0;
+}
+
+.download-info p {
+  margin: 0;
+  font-size: .9em;
+}
+
+.download-cast img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.download-rating {
+  background-color: #f6d200;
+  padding: 1em 2em;
+  color: black;
+  font-size: .9em;
+}
+
+.download-rating .rate {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: -.25em;
+}
